@@ -10,16 +10,253 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
 <header class="site-header">
   <!-- nav goes here -->
+  <div class="container header-inner">
+    <a href="#top" class="logo">PE<span class="logo-dot">.</span></a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile" hidden>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
 <main id="main">
   <!-- sections go here -->
+  <section id="top" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="hero-kicker">Cloud &amp; DevOps Engineer, based in Accra</p>
+        <h1>I build infrastructure<br>that ships itself.</h1>
+        <p class="hero-lede">
+          I design and automate cloud systems on AWS — turning manual
+          deployments into pipelines that run themselves. AWS Certified
+          Cloud Practitioner, comfortable across Terraform, Docker and
+          Kubernetes.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View my work</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="terminal">
+          <div class="terminal-bar">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+            <span class="terminal-title">priscilla@deploy: ~/infra</span>
+          </div>
+          <div class="terminal-body">
+            <div id="terminal-output" class="terminal-output"></div>
+            <span class="cursor" aria-hidden="true"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="about" class="section">
+    <div class="container about-grid">
+      <div class="section-heading">
+        <h2>About</h2>
+      </div>
+      <div class="about-content">
+        <p>
+          I started out fixing hardware and resetting passwords as an IT
+          support intern, then moved into DevOps during my National
+          Service at Solv Ghana — where I took a full-stack leads
+          management platform from a local manually-managed server to a
+          properly automated cloud deployment. That shift, from doing
+          things by hand to building systems that do them for you, is
+          what pulled me into infrastructure and automation.
+        </p>
+        <p>
+          Today I work mainly on AWS, using Terraform to provision
+          infrastructure and GitHub Actions to automate the path from
+          commit to production. I also picked up graphic design along
+          the way, which turned out to be useful for thinking about
+          layout and clarity — even in a terminal.
+        </p>
+        <ul class="badge-list">
+          <li class="badge">
+            <span class="badge-mark" aria-hidden="true">☁</span>
+            <div>
+              <p class="badge-title">AWS Certified Cloud Practitioner</p>
+              <p class="badge-sub">AmaliTech AWS re/Start · Feb–May 2025</p>
+            </div>
+          </li>
+          <li class="badge">
+            <span class="badge-mark" aria-hidden="true">⎈</span>
+            <div>
+              <p class="badge-title">Kubernetes &amp; Cloud Native Essentials (LFS250)</p>
+              <p class="badge-sub">The Linux Foundation · Apr–Aug 2026</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Projects</h2>
+        <p class="section-sub">Infrastructure and systems work from recent roles.</p>
+      </div>
+
+      <div class="project-grid">
+
+        <article class="project-card">
+          <p class="project-role">Solv Ghana · DevOps Engineer, National Service</p>
+          <h3>Leads management platform — cloud deployment</h3>
+          <p>
+            Took a full-stack leads platform from a self-managed server to
+            an automated AWS deployment: provisioned infrastructure,
+            migrated the database to RDS, and hosted the Angular frontend
+            on S3.
+          </p>
+          <ul class="tag-row">
+            <li>EC2</li><li>Terraform</li><li>GitHub Actions</li><li>RDS</li><li>S3</li>
+          </ul>
+          <p class="project-link-placeholder">Repository link available on request</p>
+        </article>
+
+        <article class="project-card">
+          <p class="project-role">Solv Ghana · CI/CD</p>
+          <h3>Backend pipeline automation</h3>
+          <p>
+            Built end-to-end CI/CD pipelines for backend repositories using
+            GitHub Actions, removing manual release steps, and set up
+            Supervisor to keep background API processes running with
+            structured logging.
+          </p>
+          <ul class="tag-row">
+            <li>GitHub Actions</li><li>Linux</li><li>Supervisor</li><li>Bash</li>
+          </ul>
+          <p class="project-link-placeholder">Repository link available on request</p>
+        </article>
+
+        <article class="project-card">
+          <p class="project-role">Netis Ghana Limited · IT Support Intern</p>
+          <h3>Systems administration &amp; support</h3>
+          <p>
+            Managed Active Directory accounts, diagnosed hardware and
+            software issues, and handled OS deployment across
+            workstations — the groundwork that later made cloud
+            infrastructure feel like a natural next step.
+          </p>
+          <ul class="tag-row">
+            <li>Active Directory</li><li>Windows</li><li>Troubleshooting</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Skills</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Cloud platforms</h3>
+          <ul class="tag-row">
+            <li>AWS EKS</li><li>EC2</li><li>S3</li><li>Lambda</li><li>IAM</li><li>VPC</li><li>ALB</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Infrastructure as code</h3>
+          <ul class="tag-row">
+            <li>Terraform</li><li>CloudFormation</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>CI/CD &amp; containers</h3>
+          <ul class="tag-row">
+            <li>GitHub Actions</li><li>Docker</li><li>Kubernetes</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Scripting &amp; automation</h3>
+          <ul class="tag-row">
+            <li>Bash</li><li>Shell scripting</li><li>Python</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Version control &amp; OS</h3>
+          <ul class="tag-row">
+            <li>Git</li><li>GitHub</li><li>Linux/UNIX</li>
+          </ul>
+        </div>
+      </div>
+      <div class="pipeline" role="img" aria-label="Deployment pipeline: code, build, test, deploy, monitor">
+        <div class="pipeline-step"><span>Code</span></div>
+        <div class="pipeline-step"><span>Build</span></div>
+        <div class="pipeline-step"><span>Test</span></div>
+        <div class="pipeline-step"><span>Deploy</span></div>
+        <div class="pipeline-step"><span>Monitor</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section section-alt">
+    <div class="container contact-grid">
+      <div class="section-heading">
+        <h2>Contact</h2>
+        <p class="section-sub">
+          Open to internships and roles in cloud infrastructure and DevOps.
+        </p>
+        <ul class="contact-list">
+          <li><a href="mailto:ewusii.priscilla@gmail.com">ewusii.priscilla@gmail.com</a></li>
+          <li><a href="tel:+233598025724">+233 598 025 724</a></li>
+          <li><a href="https://www.linkedin.com/in/priscilla-ewusi" target="_blank" rel="noopener">linkedin.com/in/priscilla-ewusi</a></li>
+          <li><a href="https://github.com/PriscillaEwusi" target="_blank" rel="noopener">github.com/PriscillaEwusi</a></li>
+        </ul>
+      </div>
+
+      <form id="contact-form" class="contact-form" action="https://formsubmit.co/ajax/ewusii.priscilla@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New message from your portfolio site">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required autocomplete="name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required autocomplete="email">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit" class="btn btn-primary">Send message</button>
+        <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
 </main>
 
 <footer class="site-footer">
   <!-- footer goes here -->
+  <div class="container footer-inner">
+    <p>© 2026 Priscilla Ewusi.</p>
+    <p>Built for the DTEN Full Stack Web Development internship.</p>
+  </div>
 </footer>
 
 <script src="script.js"></script>
