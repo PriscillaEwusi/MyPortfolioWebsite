@@ -1,6 +1,7 @@
 ## Priscilla Ewusi | Cloud & DevOps Portfolio
 
-A responsive, accessible personal portfolio website for a Cloud & DevOps Engineer, built with plain HTML, CSS and JavaScript (no frameworks) as Task 1 of the Daryl Tech & Educational Network (DTEN) Full Stack Web Development internship.
+This is a personal portfolio site built for the DTEN Full Stack Web Development
+A responsive, accessible personal portfolio website for a Cloud & DevOps Engineer, built with plain HTML, CSS and JavaScript (no frameworks) 
 
 Live site: [Insert live URL] Author: Priscilla Ewusi
 
