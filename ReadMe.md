@@ -3,7 +3,9 @@
 This is a personal portfolio site built for the DTEN Full Stack Web Development
 A responsive, accessible personal portfolio website for a Cloud & DevOps Engineer, built with plain HTML, CSS and JavaScript (no frameworks) 
 
-Live site: [Insert live URL] Author: Priscilla Ewusi
+Live site:[](https://priscillaportfolio-xi.vercel.app/)
+
+Author: Priscilla Ewusi
 
 ## Features
 Four main sections: About, Projects, Skills and Contact
