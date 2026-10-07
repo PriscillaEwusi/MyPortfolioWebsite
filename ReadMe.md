@@ -30,27 +30,18 @@ No build tools needed. Either:
    # then visit http://localhost:8000
    ```
 
-## Accessibility notes
-Skip-to-content link and semantic landmarks (header, nav, main, section, footer)
-Labelled navigation regions and form fields, with autocomplete attributes
-Visible :focus-visible outlines
-role="status" and aria-live="polite" on form feedback
-Text alternative for the pipeline graphic (role="img" and aria-label)
-prefers-reduced-motion support: smooth scrolling and animation are disabled and the terminal text appears instantly
-External links use rel="noopener"
-
 ## Responsive Breakpoints
 Width	Change
-900 px	Hero and project grids collapse to a single column
-800 px	About and contact sections stack
-760 px	Navigation switches to the hamburger menu
-700 px	Pipeline graphic stacks vertically
+- 900 px	Hero and project grids collapse to a single column
+- 800 px	About and contact sections stack
+- 760 px	Navigation switches to the hamburger menu
+- 700 px	Pipeline graphic stacks vertically
 
 ## Deployment
 
 The site is static and can be hosted on GitHub Pages, Netlify or Vercel with no build command and no output directory. Deploy from the repository root.
 
 ## Acknowledgements
-Contact form powered by FormSubmit
-Fonts from Google Fonts
-Built during the DTEN Full Stack Web Development internship
+- Contact form powered by FormSubmit
+- Fonts from Google Fonts
+- Built during the DTEN Full Stack Web Development internship
