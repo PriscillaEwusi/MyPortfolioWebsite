@@ -42,7 +42,7 @@ Width	Change
 
 ## Deployment
 
-The site is static and can be hosted on GitHub Pages, Netlify or Vercel with no build command and no output directory. Deploy from the repository root.
+The site is static and it was hosted on Vercel with no build command and no output directory. Deployed from the repository root.
 
 ## Acknowledgements
 - Contact form powered by FormSubmit
